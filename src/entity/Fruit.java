@@ -12,6 +12,12 @@ import java.util.Date;
 
 public class Fruit {
     public String name = "banana";
+
     @JSONField(format="MM/dd/yyyy") // аннотация для формата даты
     public Date date = new Date();
+
+    // создание enum
+    public enum Type {fresh, middle, spoiled}
+    // инициализация поля type c типом Type
+    public Type type = Type.fresh;
 }

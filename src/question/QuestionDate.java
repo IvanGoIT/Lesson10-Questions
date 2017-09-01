@@ -27,6 +27,7 @@ public class QuestionDate {
 
 
         fruit.name = "apple";
+        fruit.type = Fruit.Type.spoiled;
         json = JSON.toJSONString(fruit);
 
         System.out.println("JSON в Объект");
